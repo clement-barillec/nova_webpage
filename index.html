@@ -26,9 +26,18 @@
 
     <script>
         function afficherConseil() {
-            document.getElementById("message").innerText = "Vivre !";
-            document.getElementById("message").style.display = "block"; // Afficher le message
-            document.getElementById("image").style.display = "block"; // Afficher l'image
+            const messageElement = document.getElementById("message");
+            const imageElement = document.getElementById("image");
+
+            // Vérifie si le message est actuellement affiché
+            if (messageElement.style.display === "block") {
+                messageElement.style.display = "none"; // Masquer le message
+                imageElement.style.display = "none"; // Masquer l'image
+            } else {
+                messageElement.innerText = "Vivre !";
+                messageElement.style.display = "block"; // Afficher le message
+                imageElement.style.display = "block"; // Afficher l'image
+            }
         }
     </script>
 </body>
