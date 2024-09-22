@@ -47,11 +47,17 @@ p {
     cursor: pointer;
     transition: background-color 0.3s;
     margin-bottom: 20px; /* Espace entre les boutons */
+    display: block; /* Assurer que les boutons soient sur des lignes séparées */
 }
 
 /* Effet de survol des boutons */
 .gros-bouton:hover {
     background-color: #444444; /* Gris anthracite plus foncé au survol */
+}
+
+/* Conserver la position des boutons */
+.conteneur-premier-bouton {
+    margin-bottom: 30px; /* Espace sous le premier bouton et son contenu */
 }
 
 /* Style du footer */
