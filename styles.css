@@ -9,7 +9,7 @@ body {
 
 /* Style du header */
 header {
-    background-color: #98FF98; /* Vert menthe */
+    background-color: #333333; /* Gris anthracite */
     padding: 20px;
     text-align: center;
     color: white;
@@ -25,12 +25,12 @@ main {
 }
 
 h2 {
-    color: #4CAF50;
+    color: #333333;
 }
 
 /* Style du footer */
 footer {
-    background-color: #333;
+    background-color: #333333; /* Gris anthracite */
     color: white;
     text-align: center;
     padding: 10px 0;
