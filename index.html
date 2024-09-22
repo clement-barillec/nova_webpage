@@ -14,8 +14,15 @@
 
     <main>
         <section>
+            <h2>Objectifs :</h2>
+            <ul>
+                <li>Full remote</li>
+                <li>Escape the rat race</li>
+                <li>Bodysurf every day!</li>
+            </ul>
             <button class="gros-bouton" onclick="afficherConseil()">Quel conseil pour une vie heureuse ?</button>
             <p id="message" style="display:none;"></p> <!-- Paragraphe caché pour le message -->
+            <img id="image" src="https://github.com/clement-barillec/nova_webpage/blob/main/bernard_montangero.jpg" alt="Image inspirante" style="display:none; width: 200px;"/> <!-- Remplace par l'URL de ta photo -->
         </section>
     </main>
 
@@ -27,6 +34,7 @@
         function afficherConseil() {
             document.getElementById("message").innerText = "Vivre !";
             document.getElementById("message").style.display = "block"; // Afficher le message
+            document.getElementById("image").style.display = "block"; // Afficher l'image
         }
     </script>
 </body>
