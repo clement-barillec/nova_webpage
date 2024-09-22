@@ -71,10 +71,10 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
-    bottom: 0;
+    /* Retirer position: fixed; pour permettre le défilement */
     width: 100%;
 }
+
 
 /* Style pour le message */
 #message, #message2 {
