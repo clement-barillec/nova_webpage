@@ -1,15 +1,15 @@
 /* Styles basiques pour le corps */
 body {
-    font-family: 'Trebuchet MS', sans-serif; /* Choix d'une police moderne */
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e0f7fa; /* Couleur de fond légère, rappelant le ciel */
-    color: #4e342e; /* Couleur du texte, marron terreux */
+    background-color: #f0f0f0;
+    color: #333;
 }
 
 /* Style du header */
 header {
-    background-color: #1b5e20; /* Vert foncé, rappelant la jungle */
+    background-color: #333333; /* Gris anthracite */
     padding: 20px;
     text-align: center;
     color: white;
@@ -17,7 +17,6 @@ header {
 
 h1 {
     margin: 0;
-    font-family: 'Comic Sans MS', cursive; /* Style ludique pour le titre */
 }
 
 /* Style pour le contenu principal */
@@ -26,12 +25,12 @@ main {
 }
 
 h2 {
-    color: #2e7d32; /* Vert plus clair pour les sous-titres */
+    color: #333333;
 }
 
 /* Style du footer */
 footer {
-    background-color: #1b5e20; /* Vert foncé */
+    background-color: #333333; /* Gris anthracite */
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -42,41 +41,32 @@ footer {
 
 /* Style du gros bouton */
 .gros-bouton {
-    background-color: #ffeb3b; /* Jaune vif pour le bouton */
-    color: #4e342e; /* Couleur du texte marron */
+    background-color: #007BFF; /* Couleur du bouton */
+    color: white; /* Couleur du texte */
     border: none; /* Pas de bordure */
     padding: 15px 30px; /* Espacement interne */
     font-size: 18px; /* Taille du texte */
     border-radius: 5px; /* Coins arrondis */
     cursor: pointer; /* Curseur pointeur au survol */
     transition: background-color 0.3s; /* Transition pour l'effet de survol */
+    margin-bottom: 20px; /* Ajoute un espace entre les boutons */
 }
 
 /* Effet de survol */
 .gros-bouton:hover {
-    background-color: #fbc02d; /* Jaune un peu plus foncé au survol */
+    background-color: #0056b3; /* Couleur au survol */
 }
 
 /* Style pour le message */
-#message {
+#message, #message2 {
     font-size: 24px; /* Augmente la taille du texte */
     color: #f57f20; /* Orange pour le message */
     margin-top: 10px; /* Ajoute un espace au-dessus */
 }
 
 /* Style pour l'image */
-#image {
+#image, #image2 {
     margin-top: 10px; /* Ajoute un espace au-dessus de l'image */
     border: 2px solid #2e7d32; /* Bordure verte autour de l'image */
     border-radius: 5px; /* Coins arrondis */
-}
-
-/* Responsive Design */
-@media (max-width: 600px) {
-    .gros-bouton {
-        width: 100%; /* Bouton prend toute la largeur */
-    }
-    #image {
-        width: 100%; /* Image prend toute la largeur */
-    }
 }
