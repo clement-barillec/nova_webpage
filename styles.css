@@ -1,15 +1,15 @@
 /* Styles basiques pour le corps */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Trebuchet MS', sans-serif; /* Choix d'une police moderne */
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
-    color: #333;
+    background-color: #e0f7fa; /* Couleur de fond légère, rappelant le ciel */
+    color: #4e342e; /* Couleur du texte, marron terreux */
 }
 
 /* Style du header */
 header {
-    background-color: #333333; /* Gris anthracite */
+    background-color: #1b5e20; /* Vert foncé, rappelant la jungle */
     padding: 20px;
     text-align: center;
     color: white;
@@ -17,6 +17,7 @@ header {
 
 h1 {
     margin: 0;
+    font-family: 'Comic Sans MS', cursive; /* Style ludique pour le titre */
 }
 
 /* Style pour le contenu principal */
@@ -25,12 +26,12 @@ main {
 }
 
 h2 {
-    color: #333333;
+    color: #2e7d32; /* Vert plus clair pour les sous-titres */
 }
 
 /* Style du footer */
 footer {
-    background-color: #333333; /* Gris anthracite */
+    background-color: #1b5e20; /* Vert foncé */
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -41,8 +42,8 @@ footer {
 
 /* Style du gros bouton */
 .gros-bouton {
-    background-color: #007BFF; /* Couleur du bouton */
-    color: white; /* Couleur du texte */
+    background-color: #ffeb3b; /* Jaune vif pour le bouton */
+    color: #4e342e; /* Couleur du texte marron */
     border: none; /* Pas de bordure */
     padding: 15px 30px; /* Espacement interne */
     font-size: 18px; /* Taille du texte */
@@ -53,5 +54,29 @@ footer {
 
 /* Effet de survol */
 .gros-bouton:hover {
-    background-color: #0056b3; /* Couleur au survol */
+    background-color: #fbc02d; /* Jaune un peu plus foncé au survol */
+}
+
+/* Style pour le message */
+#message {
+    font-size: 24px; /* Augmente la taille du texte */
+    color: #f57f20; /* Orange pour le message */
+    margin-top: 10px; /* Ajoute un espace au-dessus */
+}
+
+/* Style pour l'image */
+#image {
+    margin-top: 10px; /* Ajoute un espace au-dessus de l'image */
+    border: 2px solid #2e7d32; /* Bordure verte autour de l'image */
+    border-radius: 5px; /* Coins arrondis */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .gros-bouton {
+        width: 100%; /* Bouton prend toute la largeur */
+    }
+    #image {
+        width: 100%; /* Image prend toute la largeur */
+    }
 }
