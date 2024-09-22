@@ -38,3 +38,20 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* Style du gros bouton */
+.gros-bouton {
+    background-color: #007BFF; /* Couleur du bouton */
+    color: white; /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    padding: 15px 30px; /* Espacement interne */
+    font-size: 18px; /* Taille du texte */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur pointeur au survol */
+    transition: background-color 0.3s; /* Transition pour l'effet de survol */
+}
+
+/* Effet de survol */
+.gros-bouton:hover {
+    background-color: #0056b3; /* Couleur au survol */
+}
