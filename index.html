@@ -14,9 +14,15 @@
 
     <main>
         <section>
+            <!-- Premier bouton et message -->
             <button class="gros-bouton" onclick="afficherConseil()">Quel conseil pour une vie heureuse ?</button>
-            <p id="message" style="display:none;"></p> <!-- Paragraphe caché pour le message -->
-            <img id="image" src="https://raw.githubusercontent.com/clement-barillec/nova_webpage/refs/heads/main/bernard_montangero.jpg" alt="Image inspirante" style="display:none; width: 200px;"/> <!-- Remplace par l'URL de ta photo -->
+            <p id="message" style="display:none;"></p>
+            <img id="image" src="https://raw.githubusercontent.com/clement-barillec/nova_webpage/main/bernard_montangero.jpg" alt="Image inspirante" style="display:none; width: 200px;"/>
+
+            <!-- Deuxième bouton et message -->
+            <button class="gros-bouton" onclick="afficherMadeleine()">Une madeleine de Proust de notre enfance :</button>
+            <p id="message2" style="display:none;"></p>
+            <img id="image2" src="https://raw.githubusercontent.com/clement-barillec/nova_webpage/refs/heads/main/serge_reggiani.jpg" alt="Serge Reggiani" style="display:none; width: 200px;"/>
         </section>
     </main>
 
@@ -25,18 +31,33 @@
     </footer>
 
     <script>
+        // Fonction pour le premier bouton
         function afficherConseil() {
             const messageElement = document.getElementById("message");
             const imageElement = document.getElementById("image");
 
-            // Vérifie si le message est actuellement affiché
             if (messageElement.style.display === "block") {
-                messageElement.style.display = "none"; // Masquer le message
-                imageElement.style.display = "none"; // Masquer l'image
+                messageElement.style.display = "none";
+                imageElement.style.display = "none";
             } else {
                 messageElement.innerText = "Vivre !";
-                messageElement.style.display = "block"; // Afficher le message
-                imageElement.style.display = "block"; // Afficher l'image
+                messageElement.style.display = "block";
+                imageElement.style.display = "block";
+            }
+        }
+
+        // Fonction pour le deuxième bouton
+        function afficherMadeleine() {
+            const messageElement2 = document.getElementById("message2");
+            const imageElement2 = document.getElementById("image2");
+
+            if (messageElement2.style.display === "block") {
+                messageElement2.style.display = "none";
+                imageElement2.style.display = "none";
+            } else {
+                messageElement2.innerText = "L'album de Serge Reggiani";
+                messageElement2.style.display = "block";
+                imageElement2.style.display = "block";
             }
         }
     </script>
