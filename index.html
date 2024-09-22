@@ -9,22 +9,31 @@
 </head>
 <body>
     <header>
-        <h1>bienvenue sur nova_webpage</h1>
+        <h1>Bienvenue sur nova_webpage</h1>
     </header>
 
-<main>
-    <section>
-        <h2>Objectifs :</h2>
-        <ul>
-            <li>Full remote</li>
-            <li>Escape the rat race</li>
-            <li>Bodysurf every day!</li>
-        </ul>
-    </section>
-</main>
+    <main>
+        <section>
+            <h2>Objectifs :</h2>
+            <ul>
+                <li>Full remote</li>
+                <li>Escape the rat race</li>
+                <li>Bodysurf every day!</li>
+            </ul>
+            <button class="gros-bouton" onclick="afficherConseil()">Quel conseil pour une vie heureuse ?</button>
+            <p id="message" style="display:none;"></p> <!-- Paragraphe caché pour le message -->
+        </section>
+    </main>
 
     <footer>
         <p>© 2024 nova_webpage</p>
     </footer>
+
+    <script>
+        function afficherConseil() {
+            document.getElementById("message").innerText = "Vivre !";
+            document.getElementById("message").style.display = "block"; // Afficher le message
+        }
+    </script>
 </body>
 </html>
