@@ -65,6 +65,11 @@ p {
     margin-bottom: 50px; /* Augmente l'espace entre la première image et le deuxième bouton */
 }
 
+/* Ajouter plus d'espace sous la première image */
+#image2 {
+    margin-bottom: 50px; /* Augmente l'espace entre la deuxieme image et le troisieme bouton */
+}
+
 /* Style du footer */
 footer {
     background-color: #333333; /* Gris anthracite */
