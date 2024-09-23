@@ -25,6 +25,11 @@
             <button class="gros-bouton" onclick="afficherMadeleine()">Une madeleine de Proust de notre enfance :</button>
             <p id="message2" style="display:none;"></p>
             <img id="image2" src="https://raw.githubusercontent.com/clement-barillec/nova_webpage/refs/heads/main/serge_reggiani.jpg" alt="Serge Reggiani" style="display:none; width: 200px;"/>
+
+            <!-- Troisième bouton pour le secret de la longévité -->
+            <button class="gros-bouton" onclick="afficherSecret()">Secret de la longévité</button>
+            <p id="message3" style="display:none;"></p>
+            <img id="image3" src="TON_URL_ICI" alt="Secret de la longévité" style="display:none; width: 200px;"/>
         </section>
     </main>
 
@@ -60,6 +65,21 @@
                 messageElement2.innerText = "L'album de Serge Reggiani";
                 messageElement2.style.display = "block";
                 imageElement2.style.display = "block";
+            }
+        }
+
+        // Fonction pour le troisième bouton
+        function afficherSecret() {
+            const messageElement3 = document.getElementById("message3");
+            const imageElement3 = document.getElementById("image3");
+
+            if (messageElement3.style.display === "block") {
+                messageElement3.style.display = "none";
+                imageElement3.style.display = "none";
+            } else {
+                messageElement3.innerText = "Tractions everyday!";
+                messageElement3.style.display = "block";
+                imageElement3.style.display = "block";
             }
         }
     </script>
