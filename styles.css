@@ -71,20 +71,18 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-    /* Retirer position: fixed; pour permettre le défilement */
     width: 100%;
 }
 
-
 /* Style pour le message */
-#message, #message2 {
+#message, #message2, #message3 {
     font-size: 20px;
     color: #555555; /* Gris moyen pour les messages */
     margin-top: 10px;
 }
 
 /* Style des images */
-#image, #image2 {
+#image, #image2, #image3 {
     margin-top: 10px;
     border: 2px solid #555555; /* Bordure grise autour des images */
     border-radius: 5px;
